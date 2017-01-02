@@ -1,9 +1,14 @@
+/*
+Switch statements express conditionals across many branches.
+*/
+
 package main
 
 import "fmt"
 import "time"
 
 func main() {
+	// Here is a basic switch.
 	i := 2
 	fmt.Print("Write ", i, " as ")
 	switch i {
@@ -15,6 +20,11 @@ func main() {
 		fmt.Println("three")
 	}
 
+	/*
+		You can use commas to separate multiple expressions in the
+		same case statement. We use the optional default case
+		in this example as well.
+	*/
 	switch time.Now().Weekday() {
 	case time.Saturday, time.Sunday:
 		fmt.Println("It's the weekend")
@@ -22,6 +32,11 @@ func main() {
 		fmt.Println("It's a weekday.")
 	}
 
+	/*
+		switch without an expression is an alternate way to express
+		if/else logic. Here we also show how the case expressions
+		can be non-constants.
+	*/
 	t := time.Now()
 	switch {
 	case t.Hour() < 12:
@@ -30,6 +45,12 @@ func main() {
 		fmt.Println("It's after noon.")
 	}
 
+	/*
+		A type switch compares types instead of values. You can
+		use this to discover the the type of an interface value.
+		In this example, the variable t will have the type
+		corresponding to its clause.
+	*/
 	whatAmI := func(i interface{}) {
 		switch t := i.(type) {
 		case bool:
