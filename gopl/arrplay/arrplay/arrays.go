@@ -3,6 +3,7 @@ package arrplay
 import "fmt"
 import "strconv"
 import "sort"
+import "strings"
 
 func stats(a []int) {
     fmt.Printf("Slice a fixed: %d\n", a)
@@ -24,17 +25,21 @@ func loopy(a []int) map[string]int {
     return r
 }
 
-func mapformat(m map[string]int) {
+func mapformat(m map[string]int) string {
     // display in order by first making a slice index
     var keys []string
-    for k, _ := range m {
+    for k := range m {
         keys = append(keys, k)
     }
-    sort.Strings(keys)
-
+    sort.Strings(keys) // sorting the list of string keys
+    var r []string
     for _, v := range keys {
-        fmt.Printf("\t%s\t%d\n", v, m[v])
+        s := fmt.Sprintf("\t%s\t%d", v, m[v])
+        r = append(r, s)
     }
+    var result string
+    result = strings.Join(r, "\n")
+    return result
 }
 
 func Dothing() {
@@ -44,6 +49,6 @@ func Dothing() {
     var two [len(one)+10]int
     copy(two[len(one):],one[:])
     // stats(two[:])
-    mapformat(loopy(one[:]))
+    fmt.Println(mapformat(loopy(one[:])))
 
 }
