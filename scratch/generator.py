@@ -15,7 +15,8 @@ class Timestamp ():
     def dumpself(self):
         return self.__repr__()
     def __repr__(self):
-        fmt = ("{0:04d}-{1:02d}-{2:02d} {3:02d}:{4:02d}:{5:02d}.{6:04d}")
+        # sample format for RFC3339: 2017-01-09T16:15:09-05:00
+        fmt = ("{0:04d}-{1:02d}-{2:02d}T{3:02d}:{4:02d}:{5:02d}-05:00")
         props = []
         props.append(self.year)
         props.append(self.month)
@@ -23,10 +24,9 @@ class Timestamp ():
         props.append(self.hour)
         props.append(self.minute)
         props.append(self.second)
-        props.append(self.millisecond   )
+        # props.append(self.millisecond)
         return fmt.format(*props)
         #return()
-
 
 class Ip ():
     def __init__(self):

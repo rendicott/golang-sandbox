@@ -20,7 +20,6 @@ def check_matches(line, regexes):
                 print("matched hostanme: %s" % m.group())
             '''
     return(match)
-        
 
 
 def main():
@@ -40,6 +39,7 @@ def main():
     print("matches: %d" % matchcount)
     end = time.time()
     print("timetaken: %s" % str(end-start))
+
 
 if __name__ == "__main__":
     main()
