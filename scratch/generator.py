@@ -41,9 +41,17 @@ class Ip ():
     
 
 for i in range(int(sys.argv[1])):
-    x = Ip()
-    y = Timestamp()
-    print("%s - machine with ip of %s and a hostname: haha-nono" % (y.dumpself(), x.dumpself()))
+    # every hundred lines throw a bogus non matching line
+    if i % 100 == 0:
+        print("999-89-asdf hosty not matchy no not cool")
+        continue
+    else:
+        x = Ip()
+        y = Timestamp()
+        print("%s - machine with ip of %s and a hostname: haha-nono" % (y.dumpself(), x.dumpself()))
+    
+
+
 
 
 
