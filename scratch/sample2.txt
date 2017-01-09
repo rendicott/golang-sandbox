@@ -1,0 +1,11 @@
+2015-01-03 11:05.12345 This is a message like maybe came from a log file hostname: jjucboi ip would be something like 10.119.8.42
+2015-03-04 10:10.12345 This is a message like maybe came from a,,,,,,,,,,thing with 192.168.12.19 hostname: jdoe-pc and a weird character ? like yeah
+2016-01-05 23:20.12345 has an IP address in it 10.119.126.13 and an ERROR message with hostname: cool-laptop This is a message like maybe came from a log file
+2015-02-06 19:50.12345 This is a message like maybe came from a log file and it has an IP address in it 10.119.126.12 and an ERROR message with hostname: coolpc
+2014-01-03 11:06.12345 This is a message like maybe came from a log file hostname: jjucboi ip would be something like 10.119.8.42
+2013-03-04 10:11.12345 This is a message like maybe came from a,,,,,,,,,,thing with 192.168.12.19 hostname: jdoe-pc and a weird character ? like yeah
+2012-01-05 23:22.12345 has an IP address in it 10.119.126.13 and an ERROR message with hostname: cool-laptop This is a message like maybe came from a log file
+2011-02-06 19:51.12345 This is a message like maybe came from a log file and it has an IP address in it 10.119.126.12 and an ERROR message with hostname: coolpc
+2013-03-04 10:11.12345 This is a message like maybe came from a,,,,,,,,,,thing with hostname: jdoe-pc and a weird character ? like yeah
+2012-01-05 23:22.12345 has an IP address in it 10.119.126.13 and an ERROR message with hostname: cool-laptop This is a message like maybe came from a log file
+2011-02-06 19:51.12345 This is a message like maybe came from a log file and it has an IP address in it 10.119.126.12 and an ERROR message with hostname: coolpc
