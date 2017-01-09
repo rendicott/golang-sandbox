@@ -33,6 +33,19 @@ func mapLine(s string, filters map[string]*regexp.Regexp) (*liner, bool) {
 	return &profile, matched
 }
 
+func mapLineSlim(s string, filters map[string]*regexp.Regexp) bool {
+	var matched bool
+	for _, regex := range filters {
+		match := regex.FindAllString(s, -1)
+		if match == nil {
+			matched = false
+		} else {
+			matched = true
+		}
+	}
+	return matched
+}
+
 func main() {
 	filters := make(map[string]*regexp.Regexp)
 	filters["ipaddr"] = regexp.MustCompile(`\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b`)
@@ -46,7 +59,8 @@ func main() {
 		line := input.Text()
 		linecount++
 		// fmt.Println(reIP.MatchString(line))
-		_, matched := mapLine(line, filters)
+		// _, matched := mapLine(line, filters)
+		matched := mapLineSlim(line, filters)
 		if matched {
 			matchcount++
 		}
