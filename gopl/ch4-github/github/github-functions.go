@@ -15,7 +15,7 @@ import (
 func SearchIssues(terms []string) (*IssuesSearchResult, error) {
     q := url.QueryEscape(strings.Join(terms, " "))
     fullURL := IssueURL + "?q=" + q
-    fmt.Printf("fullURL: '%s'\n", fullURL)
+    // fmt.Printf("fullURL: '%s'\n", fullURL)
     resp, err := http.Get(fullURL)
     if err != nil {
         return nil, err
