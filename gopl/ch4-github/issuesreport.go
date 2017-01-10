@@ -1,5 +1,5 @@
 // creates a formatted github issue report based on templates
-// usage: issuesreport.exe repo:golang/go is:open json decoder
+// usage: issuesreport.exe repo:golang/go is:open json decoder 
 
 package main
 
