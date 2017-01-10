@@ -1,4 +1,5 @@
 // Issues prints a table of GitHub issues matching the search terms.
+// Usage: issues.exe repo:golang/go is:open json decoder
 
 package main
 
