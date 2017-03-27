@@ -38,7 +38,7 @@ def main():
     print("lines: %d" % linecount)
     print("matches: %d" % matchcount)
     end = time.time()
-    print("timetaken: %s" % str(end-start))
+    print("timetaken: %f ms" % ((end-start)*1000))
 
 
 if __name__ == "__main__":
