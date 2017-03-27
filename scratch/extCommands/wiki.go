@@ -1,3 +1,7 @@
+/*
+From the wiki tutorial in the official docs
+https://golang.org/doc/articles/wiki/
+*/
 package main
 
 import (
